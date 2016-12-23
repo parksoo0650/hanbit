@@ -30,7 +30,7 @@ public class ShowMonth {
 	    break;
 	case 2:
 	    if (year % 4 == 0 && year % 100 != 0) {
-		res = "28";
+		res = "29";
 	    } else if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
 		res = "29";
 	    } else {
