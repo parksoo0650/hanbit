@@ -1,8 +1,8 @@
 package com.hanbit.branch_switch;
-
 import java.util.Scanner;
 
-public class Calculator {
+public class Calculator { 
+	
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in); 
 		System.out.println("=== Calculator ===");
