@@ -11,12 +11,12 @@ public class SeriesInput {
     public static void main(String[] args) {
 	System.out.println("Type Number:");
 	Scanner s = new Scanner(System.in);
-	int sum=s.nextInt();
 	int num=0;
+	int sum=0;
 	while (true) {
 	    System.out.println("Type Number:");
-	    num=s.nextInt();
-	    if (num==-1) {
+	    num=s.nextInt(); 
+	    if (num==-1) { 
 		System.out.println("합은" + sum + "입니다.");
 		break;
 	    }
