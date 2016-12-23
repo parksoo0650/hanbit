@@ -36,11 +36,6 @@ public class ShowMonth {
 	    } else {
 		res = "28";
 	    }
-
-	    /*
-	     * if(year % 400 == 0){ res = "윤년"; }else if(year % 100 == 0){ res =
-	     * "평년"; }else if(year % 4 == 0){ res = "윤년"; }else{ res = "평년"; }
-	     */
 	    break;
 	default:
 	    res = "몰라";
