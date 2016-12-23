@@ -1,7 +1,5 @@
 package com.hanbit.branch_switch;
-
 import java.util.Scanner;
-
 /**
  * @FILE : ShowMonth.java
  * @DATE : 2016. 12. 23.
@@ -11,7 +9,6 @@ import java.util.Scanner;
  *        To. 개발자님 [1]연도를 4로 나눈값이 0 이고. 해당 연수가 100으로 나누어 떨어지지 않으면 평년이다.
  *        [2]2000년은 4로 나눈값이 0 이고, 해당 연수가 100으로 나누어 떨어지는데, 400으로 나눠 떨어지는 연도는 윤년이다
  */
-
 public class ShowMonth {
     public static void main(String[] args) {
 	Scanner s = new Scanner(System.in);
