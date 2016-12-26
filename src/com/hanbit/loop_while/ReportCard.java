@@ -8,21 +8,23 @@ import java.util.Scanner;
 */
 public class ReportCard {
 	public static void main(String[] args) {
-		int score=0,total=0,avg=0,sum=0,num=1;
+		int score=0,total=0,avg=0,num=1;
 		char grade ='0';
 		Scanner s = new Scanner(System.in);
 		System.out.print("Name : " );
+		System.out.println("If you wnat to stop , Type -1");
+		System.out.println("If the number of Subject is 6, Auto quit!!");
+		System.out.print("Score : ");
 		String name=s.next();
-		while(true){
+		while(num<=6){
 		    System.out.print("Score : ");
 		    score=s.nextInt();
 		    if(score==-1){
 			break;
 		    }
-		    sum=sum+score;
-		    total=sum;
+		    total+=score;
 		    avg=total/num;
-		    num=num+1;
+		    num++;
 		    }
 		if(avg>=90){
 			grade='A';
@@ -35,9 +37,9 @@ public class ReportCard {
 		}
 		System.out.println("");
 		System.out.println("");
-		System.out.println("Name    :" + name);
-		System.out.println("Total   :" + total);
-		System.out.println("Average :" + avg);
-		System.out.println("grade   :" + grade);
+		System.out.printf("Name    %d:" + name);
+		System.out.printf("Total   %d:" + total);
+		System.out.printf("Average %d:" + avg);
+		System.out.printf("grade   %d:" + grade);
 	}
 }

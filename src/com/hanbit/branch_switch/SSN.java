@@ -41,7 +41,7 @@ public class SSN {
 		} else if (ch == '5' || ch == '6') {
 			gender = "외국인";
 		}*/
-		System.out.print(name + " : " + ssn + " : " + gender);
+		System.out.printf("%s:%s:%s",name,ssn,gender);
 	
   }
 }

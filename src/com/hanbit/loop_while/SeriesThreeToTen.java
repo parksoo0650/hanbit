@@ -16,6 +16,6 @@ public class SeriesThreeToTen {
 	    num = num + 1; 
 	    
 	}
-	System.out.println("합은 " + sum + "입니다.");
+	System.out.printf("%s %d%s","합은",sum,"입니다.");
     }
 }

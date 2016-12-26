@@ -17,7 +17,7 @@ public class SeriesInput {
 	    System.out.println("Type Number:");
 	    num=s.nextInt(); 
 	    if (num==-1) { 
-		System.out.println("합은" + sum + "입니다.");
+		System.out.printf("%s %d%s","합은",sum,"입니다.");
 		break;
 	    }
 	    sum=sum+num; 
