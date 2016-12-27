@@ -1,8 +1,11 @@
 package com.hanbit.math;
 import java.util.Scanner;
-public class Euclid {
-    /**
-    [문제]
+
+/**
+@FILE   : Euclid.java
+@DATE   : 2016. 12. 27.
+@AUTHER : Park Seoung-soo
+@STORY  : [문제]
           두 수를 입력받아 두 수의 최대공약수와 최소공배수를 계산해서
           출력하는 순서도를 작성하시오
     [유클리드 호제법]
@@ -38,11 +41,11 @@ public class Euclid {
           15
           12
           최대공약수 3 최소공배수 60
-    * */
+*/
+public class Euclid {
     public static void main(String[] args) {
            int a, b, big, small=0, mok=0, nmg=0, gcd=0, lcm=0, count=0;
-
-                System. out.println( "최대공약수, 최소공배수를 구하는 두 수 입력 " );
+           	System. out.println( "최대공약수, 최소공배수를 구하는 두 수 입력 " );
                 Scanner sc = new Scanner(System.in);
                  a = sc.nextInt();
                  b = sc.nextInt();
@@ -51,32 +54,24 @@ public class Euclid {
                  if ( a > b) {
                        big = a;
                        small = b;
-                       
-                } else {
+                 } else {
                        big = b;
                        small = a;
-                       
                 }	
                  while(true){
                        // 이 부분을 코딩하여 완성하시오
-                     
                      nmg=big%small;
                      if(nmg!=0){
-                	 
                 	 gcd=small%nmg;
                 	 if(gcd==0){
                 	     gcd=nmg;
                 	     lcm=(big*small)/gcd; 
                 	 }
-                	 
-                    }else{
                 	 gcd=small;
                 	 lcm=(big*small)/gcd;
                     }
                      System.out.printf("최대공약수:%d, 최대공배수:%d",gcd,lcm);
-                    
-                     break;
-          
+                    break;
                  }
           }
 }
