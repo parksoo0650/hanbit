@@ -1,5 +1,11 @@
-package com.hanbit.loop_for;
+package com.hanbit.series;
 
+/**
+@FILE   : Fibonacci.java
+@DATE   : 2016. 12. 27.
+@AUTHER : Park Seoung-soo
+@STORY  :  
+*/
 public class Fibonacci {
     public static void main(String[] args) {
 	// 1, 1, 2, 3, 5, 8, 13, 21, 34, 55의 합
@@ -9,10 +15,6 @@ public class Fibonacci {
 	    c=a+b;
 	    a=b;
 	    b=c;
-
-	    System.out.println(a);
-	    // System.out.println(b);
-	    // System.out.println(c);
 	    sum+=c;
 	}
 	System.out.printf("%d",sum);
