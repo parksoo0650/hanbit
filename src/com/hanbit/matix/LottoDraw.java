@@ -1,4 +1,4 @@
-package com.hanbit.math;
+package com.hanbit.matix;
 
 /**
 @FILE   : LottoDraw.java
@@ -13,8 +13,15 @@ package com.hanbit.math;
 */
 public class LottoDraw {
     public static void main(String[] args) {
-	
-	int ball1=0,ball2=0,ball3=0,ball4=0,ball5=0,ball6=0,count=0;
+	int lottoNum=0, count=0, i=0;
+	int[]balls=new int[6];
+	for(i=0;i<balls.length;i++){
+	    lottoNum=(int)(Math.random()*45+1);
+	    balls[i]=lottoNum;
+	    System.out.printf("%d,",balls[i]);
+	}
+	 
+	/*int ball1=0,ball2=0,ball3=0,ball4=0,ball5=0,ball6=0,count=0;
 	while(true){
 	    
 	    int lottoNum=(int) (Math.random()*45+1);
@@ -55,6 +62,6 @@ public class LottoDraw {
 	    }
 	   
 	  }
-	  System.out.printf("추첨된 번호 [%d,%d,%d,%d,%d,%d]",ball1,ball2,ball3,ball4,ball5,ball6);
+	  System.out.printf("추첨된 번호 [%d,%d,%d,%d,%d,%d]",ball1,ball2,ball3,ball4,ball5,ball6);*/
     }
 }
