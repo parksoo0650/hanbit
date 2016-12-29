@@ -1,4 +1,4 @@
-package om.hanbit.loop_while;
+package com.hanbit.loop_while;
 /**
  * @FILE : SeriesOneToFive.java
  * @DATE : 2016. 12. 23.

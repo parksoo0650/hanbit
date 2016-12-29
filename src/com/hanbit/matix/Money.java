@@ -35,19 +35,20 @@ public class Money {
 
 	        int nmg = 0;
 	        int mod = 0;
-	        int moneycount=0;
+	        String moneycount="0";
 	        System. out.println( "Money:" + money);
 	        System.out.printf("%s %d %s","요청금액은",money,"원 입니다. \n");
-	        for (int i = 0; i < moneyUnit.length; i++) {
+	         for (int i = 0; i < moneyUnit.length; i++) {
 	            // 이 부분을 코딩하여 완성하시오
 	            mok=money/moneyUnit[i];
 	            nmg=money%moneyUnit[i];
 	            money=nmg;
-	            String[] moneyname = { "5만원", "1만원", "5천원", "1천원", "5백원", "백원", "오십원", "십원"};
-	            for(int j=0; j < moneyname.length; j++){
+	            //String[] moneyname = { "5만원", "1만원", "5천원", "1천원", "5백원", "백원", "오십원", "십원"};
+	            /*for(int j=0; j < moneyname.length; j++){
 	        	m=moneyname[i];
-	            }
-	            System.out.printf("%s %d%s \n",m,mok,"매");
+	            }*/
+	            moneycount=moneyUnit[i]+"원"+mok+"매 \n";
+	            System.out.printf(moneycount);
 	            
 	        	
 	            }
