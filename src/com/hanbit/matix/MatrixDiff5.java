@@ -7,7 +7,7 @@ public class MatrixDiff5 {
 	for(int i=0;i<mtx.length;i++){
 	    System.out.println("");
 	    for(int j=0;j<mtx[i].length;j++){
-		mtx[i][j]=k+=5;
+		//mtx[i][j]=k+=5;
 		System.out.printf("%d\t",mtx[i][j]);
 	    }
 	}

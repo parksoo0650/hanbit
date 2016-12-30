@@ -14,20 +14,34 @@ public class Zigzag {
     public static void main(String[] args) {
         int length = 5; // 배열 길이
         int[][] arr = new int[length][length];
-        int k = 0; // 넣을 값
+        int k = 1; // 넣을 값
         int flag = 1; // 스위치변수
         int i = 0; // 행
         int j = 0; // 열
+        String str="";
+        int x=0;
         for(i=0;i<arr.length;i++){
-            System.out.println("");
-            for(j=0;j<arr[i].length;j++){
-        	k+=1;
-        	arr[j][i]=k;
-        	if(){
-        	    
+            System.out.printf("%s","\n");
+            if(i%2==1){
+        	for(j=4;j>=0;j--){
+			arr[i][j]=k;
+			k++;
+		    }
+		}else{
+		    for(j=0;j<5;j++){
+			arr[i][j]=k;
+			k++;
+		    
+		    }	
+		    
         	}
-        	System.out.printf("%d\t",arr[j][i]);
             }
+        for(i=0;i<5;i++){
+            System.out.printf("%s","\n");
+            for(j=0;j<5;j++){
+        	System.out.printf("%d\t",arr[i][j]);
+            } 
         }
-    }
+        
+    }     
 }
